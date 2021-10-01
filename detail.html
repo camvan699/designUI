@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style-detail.css">
+</head>
+
+<body>
+    <header>
+        Lý lịch máy điện tử
+    </header>
+
+    <main>
+
+        <div class="short-info">
+
+
+        </div>
+        <div class="detail-info">
+            <div class="qldd-info"></div>
+            <div class="vtlk-info"></div>
+
+
+            <div class="qlsc-info"></div>
+        </div>
+
+    </main>
+
+    <script>
+        const list_users = [
+            "item1",
+            "item2",
+            "item3",
+            "item4",
+            "item5",
+            "item6",
+            "item7",
+            "item8",
+            "item9",
+            "item10",
+            "item11",
+            "item12",
+        ]
+
+        const list_element = document.getElementById('list');
+        const pagination_elemet = document.getElementById('pagination')
+
+
+        var current_page = 1;
+        var row = 5
+
+        function Displaylist(item, wraper, row_perpage, page) {
+            wraper.innerHTML = ""
+            page--;
+            var loop_start = row_perpage * page;
+            var paginaedItems = item.slice(loop_start, loop_start + row_perpage)
+            console.log(paginaedItems)
+            for (let i = loop_start; i < loop_start + row_perpage; i++) {
+
+
+            }
+        }
+        Displaylist(list_users, list_element, row, 3)
+    </script>
+</body>
+
+</html>

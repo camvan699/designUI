@@ -1,0 +1,225 @@
+body {
+    margin: 0px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: rgb(239, 239, 250);
+    --pane-padding: 5px 42px;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.title span {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.short-info {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-areas: 'info img';
+}
+
+.info {
+    grid-area: info;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: flex-start;
+    flex-direction: row;
+    padding: 5px;
+    margin: 5px;
+    background-color: var(--main-color);
+    position: relative;
+}
+
+.text-form {
+    margin: 0 10px 5px 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.normal-form {
+    width: 20%;
+}
+
+.long-form {
+    width: 40%;
+}
+
+.short-from {
+    width: 11%;
+}
+
+.xs-from {
+    width: 5%;
+}
+
+.medium-from {
+    width: 25%;
+}
+
+.text-form span {
+    font-size: 12px;
+    font-weight: 500;
+    font-weight: bold;
+}
+
+.text-form input {
+    width: 100%;
+    border: none;
+    border-bottom: 1.5px solid #5e5757;
+    padding: 5px;
+    font-size: 14px;
+    outline: none;
+    color: #0c0c0c;
+    background-color: var(--main-color)
+}
+
+.text-form span::after {
+    position: absolute;
+    bottom: -5%;
+    content: "";
+    height: 2px;
+    width: 30px;
+    color: teal;
+}
+
+.text-form input:focus {
+    color: #3a2727;
+}
+
+.detail-img {
+    grid-area: img;
+}
+
+.detail-img img {
+    padding: 5px;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.search {
+    display: block;
+    /* flex-direction: row; */
+    width: 100%;
+    position: relative;
+}
+
+.search .searchTerm {
+    border: none;
+    border-right: none;
+    border-bottom: 1.5px solid #5e5757;
+    outline: none;
+    color: #2c2c2c;
+    background-color: var(--main-color)
+}
+
+.searchTerm:focus,
+.text-form input:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 2px;
+    border-image: linear-gradient(to right, #080808, #0d1611);
+    border-image-slice: 1;
+}
+
+.searchButton {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 0px;
+    top: 0px;
+    border: none;
+    background-color: var(--main-color);
+    text-align: center;
+    color: #080808;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    background: none;
+}
+
+.button-save {
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+}
+
+.button-save button {
+    cursor: pointer;
+    width: 100%;
+}
+
+.detail-info,
+.tskt {
+    background-color: var(--main-color);
+    padding: 10px;
+    margin: 5px;
+}
+
+.qlns {
+    display: flex;
+    flex-direction: column;
+    display: block;
+    background: var(--main-color);
+    margin: 0 auto;
+    padding: 10px 17px;
+    box-shadow: 2px 2px 3px -1px rgba(0, 0, 0, 0.35);
+}
+
+.qlns span {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+table {
+    margin: 0 auto;
+    font-size: 1 em;
+    margin-bottom: 15px;
+}
+
+thead {
+    background: rgb(193 192 192);
+}
+
+table thead tr th {
+    font-weight: bold;
+    padding: 12px 25px;
+    /* padding-left: 42px; */
+}
+
+table tbody input {
+    border: none;
+    background: var(--main-color);
+}
+
+table tbody input:focus {
+    border-bottom: 1px solid #eee;
+}
+
+.btn-saveqt,
+.button-save button,
+button {
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+
+/* demo */

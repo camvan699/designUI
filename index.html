@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="sidebar close">
+        <div class="logo-details">
+            <i class="bx bx-menu"></i>
+            <span class="logo-name">
+               <!-- QL Lý lịch máy điện tử -->
+            </span>
+
+        </div>
+
+        <ul class="nav-links">
+            <!-- <li>
+                <a href="#">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="link_name">Màn hình chính</span>
+                </a>
+            </li> -->
+            <li>
+                <div class="icon-link">
+                    <a href="#">
+                        <i class='bx bx-grid-alt'>
+                                                    </i>
+                        <span class="link_name">Màn hình chính</span>
+                    </a>
+                </div>
+
+                <!-- <ul class="sub-menu blank">
+                    <a class="link_name" href="#">Màn hình chính</a>
+                </ul> -->
+            </li>
+
+            <li>
+                <div class="icon-link">
+                    <a href="#">
+                        <i class='bx bx-grid-alt'></i>
+                        <span class="link_name">Lý lịch máy</span>
+                    </a>
+                    <i class='bx bx-chevron-down arrow'></i>
+
+                </div>
+
+                <ul class="sub-menu">
+                    <li>
+                        <!-- <a class="link_name" href="#">Main</a> -->
+                        <a href="#">Card</a>
+                        <a href="#">login</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <div class="icon-link">
+                    <a href="#">
+                        <i class='bx bx-book-alt'></i>
+                        <span class="link_name">Post</span>
+                    </a>
+                    <i class='bx bx-chevron-down arrow'></i>
+
+                </div>
+
+                <ul class="sub-menu">
+                    <li>
+                        <a class="link_name" href="#">Post</a>
+                        <a href="#">HTML</a>
+                        <a href="#">Java</a>
+                    </li>
+                </ul>
+            </li>
+
+
+
+
+
+        </ul>
+    </div>
+
+
+    <section class="home-section">
+        <div id="overlay" onclick="off()">
+            <div id="text" class="overlay-text">
+                <ul>Trưc thuộc
+
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <div class="home-content">
+            <span class="text">
+                Quản lý lịch máy điện tử
+            </span>
+            <div class="searchbar">
+                <input type="search" class="search">
+                <button>
+                    <i class="bx bx-search"></i>
+                </button>
+            </div>
+
+            <div class="profile-details">
+                <div class="profile-content">
+                    <img src="/Images/wireframe.png" alt="profile">
+                </div>
+
+                <div class="name-job">
+                    <div class="profile-name">CVan</div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="search-filter">
+            <button class="btn-filter">Tất cả</button>
+            <button class="btn-filter" onclick="on()">Đơn vị</button>
+            <button class="btn-filter">Nhà trạm</button>
+            <button class="btn-filter">Kho Cục kĩ thuật</button>
+        </div>
+
+        <div class="dashboard-sum">
+
+            <div class="data-target">
+                <div class="data-item item-all">
+                    <span>Thiết bị sử dụng trên mạng lưới</span>
+                </div>
+            </div>
+            <div class="data-kho">
+                <div class="data-item item-all">
+                    <span> từ các Kho</span>
+                </div>
+                <div class="data-kho-item">
+                    <span> Kho </span>
+
+                    <span>1200</span>
+                    <div class="line"></div>
+
+                </div>
+                <div class="data-kho-item">
+                    <span> Kho </span>
+
+                    <span>200</span>
+                    <div class="line"></div>
+
+                </div>
+                <div class="data-kho-item">
+                    <span> Kho </span>
+                    <span>10</span>
+                    <div class="line"></div>
+                </div>
+                <div class="data-kho-item">
+                    <span> Kho </span>
+
+                    <span>130</span>
+                    <div class="line"></div>
+
+                </div>
+                <div class="a-tag">
+                    <a href="">Xem chi tiết</a>
+
+                </div>
+            </div>
+
+
+
+
+            <div class="data-filter">
+                <div class="data-item item-all">
+                    <span>Toàn hệ thống</span>
+                    <a href="">12000 thiết bị </a>
+                </div>
+                <div class="data-item">
+
+                    <span>tuần</span>
+                    <a href="">120 thiết bị mới</a>
+
+                    <div class="sub-number">
+                        <i class="bx bx-up-arrow-alt" aria-hidden="true"></i>
+                        <span> 20</span>
+                    </div>
+                </div>
+                <div class="data-item">
+                    <span>Tháng</span>
+                    <a href="">120 thiết bị mới</a>
+                    <div class="sub-number">
+                        <i class="bx bx-up-arrow-alt" aria-hidden="true"></i>
+                        <span> 20</span>
+                    </div>
+                </div>
+                <div class="data-item">
+                    <span>Quý</span>
+                    <a href="">120 thiết bị mới</a>
+                    <div class="sub-number">
+                        <i class="bx bx-up-arrow-alt" aria-hidden="true"></i>
+                        <span> 20</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <div class="cn">
+            <a href="#" class="title-cn">
+                Vô tuyến điện - 21400 thiết bị
+            </a>
+            <ul id="autoWidth" class="cs-hidden">
+                <li class="item-a">
+                    <div class="box">
+                        <div class="slide-img">
+                            <img src="/Images/wireframe.png" alt="">
+
+                            <div class="overlay">
+                                <a href="detail.html" class="buy-btn">Xem chi tiết</a>
+                            </div>
+                        </div>
+
+                        <div class="detail-box">
+                            <div class="type">
+                                <a href="#" class="">
+                                    <p>
+                                        Thiết bị(việt nam)
+                                    </p>
+                                </a>
+
+                                <a href="#" class="">1989 </a>
+                            </div>
+                            <!-- <a href="#" class="price">$23</a> -->
+                        </div>
+                    </div>
+                </li>
+
+                <!----------------2---->
+                <li class="item-a">
+                    <div class="box">
+                        <div class="slide-img">
+                            <img src="/Images/wireframe.png" alt="">
+
+                            <!-- <div class="overlay">
+                                <a href="#" class="buy-btn">Buy-now</a>
+                            </div> -->
+                        </div>
+
+                        <div class="detail-box">
+                            <div class="type">
+                                <a href="#" class="">Rabed</a>
+
+                            </div>
+                            <a href="#" class="price">$0</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="cn">
+            <a href="#" class="title-cn">
+               Truyền dẫn - 1200 thiết bị
+            </a>
+            <ul id="autoWidth" class="cs-hidden">
+                <li class="item-a">
+                    <div class="box">
+                        <div class="slide-img">
+                            <img src="/Images/wireframe.png" alt="">
+
+                            <div class="overlay">
+                                <a href="detail.html" class="buy-btn">Xem chi tiết</a>
+                            </div>
+                        </div>
+
+                        <div class="detail-box">
+                            <div class="type">
+                                <a href="#" class="">
+                                    <p>
+                                        Thiết bị(việt nam)
+                                    </p>
+                                </a>
+
+                                <a href="#" class="">1989 </a>
+                            </div>
+                            <!-- <a href="#" class="price">$23</a> -->
+                        </div>
+                    </div>
+                </li>
+
+                <!----------------2---->
+                <li class="item-a">
+                    <div class="box">
+                        <div class="slide-img">
+                            <img src="/Images/wireframe.png" alt="">
+
+                            <!-- <div class="overlay">
+                                <a href="#" class="buy-btn">Buy-now</a>
+                            </div> -->
+                        </div>
+
+                        <div class="detail-box">
+                            <div class="type">
+                                <a href="#" class="">Rabed</a>
+
+                            </div>
+                            <a href="#" class="price">$0</a>
+                        </div>
+                    </div>
+                </li>
+
+
+            </ul>
+
+
+        </div>
+
+    </section>
+
+    <script>
+        var arrow = document.querySelectorAll(".arrow")
+
+
+        for (var i = 0; i < arrow.length; i++) {
+            arrow[i].addEventListener("click", (e) => {
+
+                var arrowParent = e.target.parentElement.parentElement;
+                console.log(arrowParent)
+                arrowParent.classList.toggle("showMenu")
+            })
+
+
+        }
+
+        var sidebar = document.querySelector(".sidebar")
+        var sidebarbtn = document.querySelector(".bx-menu")
+        console.log("sidebar", sidebar)
+        sidebarbtn.addEventListener("click", () => {
+            sidebar.classList.toggle("close")
+
+        })
+
+
+        function on() {
+            document.getElementById("overlay").style.display = "block";
+        }
+
+        function off() {
+            document.getElementById("overlay").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

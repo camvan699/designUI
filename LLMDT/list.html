@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/FRONTEND/style.css">
+    <link rel="stylesheet" href="/FRONTEND/LLMDT/list.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="home-content">
+        <span class="text">
+            Quản lý 
+        </span>
+        <div class="searchbar">
+            <input type="search" class="search">
+            <button>
+                <i class="bx bx-search"></i>
+            </button>
+        </div>
+
+        <div class="profile-details">
+            <div class="profile-content">
+                <img src="/Images/wireframe.png" alt="profile">
+            </div>
+
+            <div class="name-job">
+                <div class="profile-name">CVan</div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <section>
+        <div class="search-filter">
+            <button class="btn-filter">Tất cả</button>
+
+        </div>
+    </section>
+
+
+    <section class="home-section-list">
+        <div id="overlay" onclick="off()">
+            <div id="text" class="overlay-text">
+                <ul>Trưc thuộc
+
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="filter-form">
+            <div class="result">
+                <span>Có 120 kết quả</span>
+
+            </div>
+            <div class="filter-item">
+                <span class="filter-item-name">Thiết bị trên tuyến</span>
+                <div class="option-filter check">
+                    <input type="checkbox">
+                    <a href="#">SCĐ</a>
+                </div>
+                <div class="option-filter check">
+                    <input type="checkbox">
+                    <a href="#">Thường xuyên</a>
+                </div>
+                <div class="option-filter check">
+                    <input type="checkbox">
+                    <a href="#">Huấn luyện</a>
+                </div>
+
+            </div>
+
+            <div class="filter-item">
+                <span class="filter-item-name">Chuyên ngành</span>
+                <div class="option-filter">
+
+                    <a href="#">Vô tuyến điện</a>
+                </div>
+                <div class="option-filter">
+                    <a href="#">Chuyển mạch</a>
+                </div>
+                <div class="option-filter">
+                    <a href="#">TSL</a>
+                </div>
+                <div class="option-filter">
+                    <a href="#">CNTT</a>
+                </div>
+            </div>
+
+            <div class="filter-item">
+                <span class="filter-item-name">Thiết bị trên mạng lưới</span>
+                <div class="option-filter">
+
+                </div>
+                <div class="option-filter">
+                    <a href="#">Đo lường</a>
+                </div>
+                <div class="option-filter">
+                    <a href="#">Huấn luyện</a>
+                </div>
+                <div class="option-filter">
+                    <a href="#">TSL</a>
+                </div>
+            </div>
+        </div>
+        <div class="list-ll">
+            <div class="btns-fnc">
+
+                <div class="btns-fnc">
+                    <button class='btn-fnc add-btn'> <i class="bx bx-plus ">  </i>Tạo </button>
+                    <button class='btn-fnc add-btn'> <i class="bx bx-plus ">   </i>Tạo  từ excel</button>
+                    <button class='btn-fnc'> <i class="bx bx-refresh "></i></button>
+                    <button class='btn-fnc'> <i class="bx bx-filter"></i></button>
+                </div>
+
+
+            </div>
+
+            <div class="table">
+
+                <table>
+                    <thead>
+                        <th>STT</th>
+                        <th>Ma VTTB</th>
+                        <th>Ten VTTB</th>
+                        <th>Serial</th>
+                        <th>Năm SD</th>
+                        <th>TT SD</th>
+                        <th>|||</th>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>H12352512</td>
+                            <td>VRU 611</td>
+                            <td>11235353</td>
+                            <td>2011</td>
+                            <td>Thường xuyên</td>
+                            <td>
+                                <button>
+                                <i class="bx bx-edit"></i>
+                            </button>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>H12352512</td>
+                            <td>VRU 611</td>
+                            <td>11235353</td>
+                            <td>2011</td>
+                            <td>Thường xuyên</td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>H12352512</td>
+                            <td>VRU 611</td>
+                            <td>11235353</td>
+                            <td>2011</td>
+                            <td>Thường xuyên</td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td>H12352512</td>
+                            <td>VRU 611</td>
+                            <td>11235353</td>
+                            <td>2011</td>
+                            <td>Thường xuyên</td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>5</td>
+                            <td>H12352512</td>
+                            <td>VRU 611</td>
+                            <td>11235353</td>
+                            <td>2011</td>
+                            <td>Thường xuyên</td>
+                            <td></td>
+                        </tr>
+
+
+                        <tr>
+                            <td>6</td>
+                            <td>H12352512</td>
+                            <td>VRU 611</td>
+                            <td>11235353</td>
+                            <td>2011</td>
+                            <td>Thường xuyên</td>
+                            <td></td>
+                        </tr>
+
+
+
+                    </tbody>
+                </table>
+
+
+
+            </div>
+        </div>
+        </div>
+
+
+    </section>
+
+    <script>
+        var arrow = document.querySelectorAll(".arrow")
+
+
+        for (var i = 0; i < arrow.length; i++) {
+            arrow[i].addEventListener("click", (e) => {
+
+                var arrowParent = e.target.parentElement.parentElement;
+                console.log(arrowParent)
+                arrowParent.classList.toggle("showMenu")
+            })
+
+
+        }
+
+
+        function on() {
+            document.getElementById("overlay").style.display = "block";
+        }
+
+        function off() {
+            document.getElementById("overlay").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
